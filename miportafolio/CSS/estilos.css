@@ -17,6 +17,88 @@ body{
     font-family: Arial, Helvetica, sans-serif;  /* indicamos la tipografia que queremos */
     line-height: 1,6;  /* interlineadao */
     color: black;
-    background-color: #e80b0b;
+    background-color: #ffffff;
 
 }
+
+
+/* ENCABEZADO */
+
+header{
+text-align: center; /* alineacion de texto */
+padding: 50px 20px; /* margen interno arriba y abajo 50px y derecha e izquierda 20px*/
+background-color: black; /* color de fondo */
+color: white; /* color de texto */
+}
+
+header h1{
+
+    margin: 0;
+    font-size: 48px;
+
+}
+
+header p{   /* modificacion del parrfo del header */
+    margin-top: 10px;
+    font-size: 22px;
+    font-style: italic ;
+}
+
+/* navegacion */
+ nav{
+    display: flex; /* Para indicar la distribucion  */
+    justify-content: center; /* distribucion de los enlaces */
+    gap:25px; /* espacio entre los enlaces */
+    padding: 20px; /* margen interno  */
+    background-color: #dad8d8;
+    border-bottom: 1px solid #000000;
+}
+
+ nav a{  /* modificar enalces  */
+    text-decoration: none; /* sin decoracion */
+    color: rgb(17, 10, 231);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+ }
+
+ nav a:hover{  /* cuando pasas el mouse  */
+    background-color: #555; /* color de fondo  */
+    border-radius: 5px; /* radio de borde  */
+    text-decoration: underline;
+ }
+
+
+ /* Contenido principal section */
+
+ main{
+    max-width: 1100px;
+    margin:0 auto;
+    background-color: antiquewhite;
+ }
+
+ /* secciones */
+
+ section {
+    padding: 60px 40px;
+    border-bottom: 1px solid #ddd; /* separacion entre secciones */
+ } 
+
+ section h2{
+    margin-top: 0;
+    margin-bottom: 30px ;
+    text-align: center;
+    font-size: 30px;
+ }
+
+
+ /* seccion inicio */
+
+
+ .secion-inicio{
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+ }
