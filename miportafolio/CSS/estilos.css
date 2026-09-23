@@ -1,0 +1,22 @@
+*{  /* selector grl */
+
+    box-sizing: border-box;
+
+}
+
+html{
+
+    scroll-behavior: smooth;   /* comportamiento del scroll */
+
+}   /* selector html */
+
+
+body{
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;  /* indicamos la tipografia que queremos */
+    line-height: 1,6;  /* interlineadao */
+    color: black;
+    background-color: #f5f5f5;
+    
+}
