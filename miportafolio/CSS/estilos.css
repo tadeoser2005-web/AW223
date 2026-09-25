@@ -15,7 +15,7 @@ body{
 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;  /* indicamos la tipografia que queremos */
-    line-height: 1,6;  /* interlineadao */
+    line-height: 1.6;  /* interlineadao */
     color: black;
     background-color: #ffffff;
 
@@ -95,10 +95,115 @@ header p{   /* modificacion del parrfo del header */
  /* seccion inicio */
 
 
- .secion-inicio{
+ .seccion-inicio{
     min-height: 400px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: center;
  }
+
+.seccion-contenido {
+max-width: 700px;
+}
+
+.seccion-contenido h2{
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+.seccion-contenido p{
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+.boton,button{
+
+display: inline-block;
+padding: 12px 25px;
+border: none;
+border-radius: 5px;
+background-color: #000000;
+color: #dad8d8;  /* todos los botones estandarizados gracias al ",button" */
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
+
+}
+
+.boton:hover,button:hover{
+    background-color: rgb(10, 149, 133);   /* cuando pasas el mouse cambia el color */
+    color: #000000;
+}
+
+.sobre-mi-contenido{
+
+display: flex;
+align-items: center;
+gap: 40px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+
+.sobre-mi-contenido img{
+width: 200px;
+height: 200px;
+border-radius: 50%; /* redondear imagen  */
+box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra  */
+object-fit: cover;
+}
+
+.sobre-mi-contenido p{
+font-size: 18px;
+}
+
+
+.lista-habilidades{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.lista-habilidades li{
+    padding: 12px 20px;
+    background-color: rgb(235, 240, 239);
+    border: 3px solid;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+
+.contenedor-proyectos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.proyecto{
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #dad8d8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.proyecto h3{
+    margin-top: 0;
+    font-size: 22px;
+
+}
+
+.proyecto a{
+    color: rgb(14, 67, 212);
+    font-weight: bolder;
+    
+}
