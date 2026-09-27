@@ -117,28 +117,54 @@
 
     <h2> call me baby </h2>
    
-    <form action="">
+    <form>
 
-<div>
+<div class="campo">
 
-<label for="">nombre</label>
-<input type="text">
+<label for="nombre">
+    Nombre
+</label>
+<input 
+type="text"
+id="nombre"
+name="nombre"
+placeholder="Escribe tu nombre"
+>
 
 </div>
 
-<div>
-<label for="">correo </label>
-<input type="text">
+<div class="campo">
+<label for="email">
+    correo electronico
+</label>
+<input 
+type="text"
+id="email"
+name="email"
+placeholder="ejemplo@gmail.com"
+>
 
 
 </div>
 
-<div>
+<div class="campo">
 
-    <label for="">mensaje</label>
-    <textarea  rows="5"></textarea>
+    <label for="mensaje">
+        Mensaje
+    </label>
+    <textarea
+    id="mensaje"
+    name="mensaje"
+    rows="5"
+    placeholder="escribe tu mensaje">
+
+</textarea>
     
 </div>
+
+<button type="submit">
+    Enviar mensaje 
+</button>
 
     </form> <!-- formulario -->
 
