@@ -281,5 +281,9 @@ footer p{
     .contenedor-proyectos{
         flex-direction: column;
     }
-    
+ 
+    .cambio-color{
+        color:aqua;
+    }
+
 }

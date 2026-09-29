@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiPortafolio</title>
     <link rel="stylesheet" href="./CSS/estilos.css">
-
+    <script src="../SCRIPT/script.js" defer></script>
 </head>
 
 
@@ -19,8 +19,8 @@
     <header>
 
 <h1> Mi Portafolio </h1>   <!-- este es un titulo -->
-<p> Bienvenido a mi sitio web </p>  <!-- este es un parrafo -->
-
+<p id="texto-bienvenida"> Bienvenido a mi sitio web </p>  <!-- este es un parrafo -->
+<button id="boton-cambio"> Presioname </button>
     </header>  <!-- shift + alt + a es para comentsrio -->
 
 
@@ -78,10 +78,11 @@
      <li> Mysql</li>
      <li>Packet tracer</li>
      <li>Python</li>
-
+   
     
 </ul>
-
+ <button id="boton-color"> Cambiar color </button>
+    <button id="boton-tipo-letra"> Cambiar tipo de letra </button>
  </section>
 
 
@@ -117,7 +118,7 @@
 
     <h2> call me baby </h2>
    
-    <form>
+    <form id="formulario">
 
 <div class="campo">
 
@@ -134,12 +135,12 @@ placeholder="Escribe tu nombre"
 </div>
 
 <div class="campo">
-<label for="email">
+<label for="correo">
     correo electronico
 </label>
 <input 
 type="text"
-id="email"
+id="correo"
 name="email"
 placeholder="ejemplo@gmail.com"
 >
@@ -149,15 +150,14 @@ placeholder="ejemplo@gmail.com"
 
 <div class="campo">
 
-    <label for="mensaje">
+    <label for="texto-mensaje">
         Mensaje
     </label>
     <textarea
-    id="mensaje"
+    id="texto-mensaje"
     name="mensaje"
     rows="5"
     placeholder="escribe tu mensaje">
-
 </textarea>
     
 </div>
@@ -165,6 +165,7 @@ placeholder="ejemplo@gmail.com"
 <button type="submit">
     Enviar mensaje 
 </button>
+<p id="mensaje"></p>
 
     </form> <!-- formulario -->
 
