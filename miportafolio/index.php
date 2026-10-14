@@ -119,7 +119,7 @@
 
     <h2> call me baby </h2>
    
-    <form id="formulario">
+    <form id="formulario" action="guardar_mensaje.php" method="post">
 
 <div class="campo">
 
@@ -129,7 +129,7 @@
 <input 
 type="text"
 id="nombre"
-name="nombre"
+name="txtnombre"
 placeholder="Escribe tu nombre"
 >
 
@@ -142,8 +142,9 @@ placeholder="Escribe tu nombre"
 <input 
 type="text"
 id="correo"
-name="email"
+name="txtemail"
 placeholder="ejemplo@gmail.com"
+required
 >
 
 
@@ -156,7 +157,7 @@ placeholder="ejemplo@gmail.com"
     </label>
     <textarea
     id="texto-mensaje"
-    name="mensaje"
+    name="txtmensaje"
     rows="5"
     placeholder="escribe tu mensaje">
 </textarea>
