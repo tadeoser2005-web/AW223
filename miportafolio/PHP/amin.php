@@ -11,7 +11,7 @@
     <header>
         <h2>Zona Administracion</h2>
         <p>Mensajes recibidos</p>
-        <a href="/AW223/miportafolio/index.html" class="seccion-contenido">🏠</a>
+        <a href="/AW223/miportafolio/index.php" class="seccion-contenido">🏠</a>
     </header>
 
 <div class="contenedor-proyecto">
@@ -20,34 +20,34 @@
         <table>
             <thead>
                 <tr>
-                    <th>#</th>
+
                     <th>Nombre</th>
                     <th>Email</th>
                     <th>Mensaje</th>
+                    <th>Fecha</th>
                     <th>Opciones</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Tadeo</td>
-                    <td>tadeoser2005@gmail.com</td>
-                    <td>GGS NEXT</td>
-                    <td class="opciones">
-                        <a href="../PHP/editar.php? id=1" title="Editar">✏️</a>
-                        <a href="../PHP/borrar.php? id=1" title="Borrar">🗑️</a>
+            <?php
+            require_once __DIR__ . '/../../consulta_mensajes.php';
+            $rsMensajes = consultaMensajes();
+            while ($arrMensaje=mysqli_fetch_array($rsMensajes)){
 
+
+              echo  "<tr>
+
+                    <td>".$arrMensaje['nombre']."</td>
+                    <td>".$arrMensaje['correo']."</td>
+                    <td>".$arrMensaje['mensaje']."</td>
+                    <td>".$arrMensaje['timeStaps']."</td>
+                    <td class='opciones'>
+                        <a href='../PHP/editar.php' title='Editar'>✏️</a>
+                        <a href='../PHP/borrar.php' title='Borrar'>🗑️</a>
                     </td>
-                </tr>
-            <tr>
-                <td>2</td>
-                <td>Messi</td>
-                <td>Messi@gmail.com</td>
-                <td>Que mira bobo</td>
-                <td class="opciones">
-                    <a href="../PHP/editar.php? id=1" title="Editar">✏️</a>
-                    <a href="../PHP/borrar.php? id=1" title="Borrar">🗑️</a>
-            </tr>
+                </tr>";
+                   }
+                   ?>
             </tbody>
         </table>
 </div>

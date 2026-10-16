@@ -10,6 +10,7 @@
     <title>MiPortafolio</title>
     <link rel="stylesheet" href="./CSS/estilos.css">
     <script src="../SCRIPT/script.js" defer></script>
+
 </head>
 
 
@@ -182,7 +183,7 @@ required
 <p>2026 Mi portafolio web </p>
 <p>Practica de programacion web, todos los derechos reservados</p>
 </footer>
-
+    <script src="../SCRIPT/AlertInsert.js" defer></script>
 </body>
 
 
