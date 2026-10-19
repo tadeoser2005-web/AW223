@@ -1,4 +1,5 @@
-/*let botonCambio = document.getElementById("boton-cambio");
+/*
+let botonCambio = document.getElementById("boton-cambio");
 let textobienvenida = document.getElementById("texto-bienvenida");
 let botoncolor = document.getElementById("boton-color");
 let botonletra = document.getElementById("boton-tipo-letra");
@@ -44,4 +45,5 @@ formulario.addEventListener("submit", (e) => {
 
     mensaje.textContent = "Tus datos han sido enviados";
     mensaje.style.color = "green";
-});*/
+});
+*/

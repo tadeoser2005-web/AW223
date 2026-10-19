@@ -16,8 +16,8 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;  /* indicamos la tipografia que queremos */
     line-height: 1.6;  /* interlineadao */
-    color: black;
-    background-color: #ffffff;
+    color: #2e4bc1;
+    background-color: #c8a93e;
 
 }
 
@@ -27,8 +27,8 @@ body{
 header{
 text-align: center; /* alineacion de texto */
 padding: 50px 20px; /* margen interno arriba y abajo 50px y derecha e izquierda 20px*/
-background-color: black; /* color de fondo */
-color: white; /* color de texto */
+background-color: #2e4bc1; /* color de fondo */
+color: #c8a93e; /* color de texto */
 }
 
 header h1{
@@ -289,7 +289,7 @@ footer p{
 }
 
 .contenedor-proyecto {
-    background-color: #ffffff;
+    background-color: #d4cbcb;
     width: 85%;
     max-width: 1000px;
     margin: 40px auto;

@@ -32,7 +32,11 @@
         <form id="formulario">
 
             <div class="campo">
-
+<?php
+require_once __DIR__ . '/../../mostrarRegistro.php';
+$rsMensajes = recuperarForm();
+while ($arrMensaje=mysqli_fetch_array($rsMensajes)){
+    echo "<tr>"
                 <label for="nombre">
                     Nombre
                 </label>
@@ -40,11 +44,12 @@
                     type="text"
                     id="nombre"
                     name="nombre"
-                    placeholder="Escribe tu nombre"
+                    placeholder='".$arrMensaje["nombre"]."'
                 >
 
             </div>
-
+        </tr>"
+}
             <div class="campo">
                 <label for="correo">
                     correo electronico
@@ -77,7 +82,7 @@
                 Enviar mensaje
             </button>
             <p id="mensaje"></p>
-
+    
         </form> <!-- formulario -->
 
 
