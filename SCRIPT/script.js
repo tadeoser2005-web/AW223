@@ -1,4 +1,4 @@
-/*
+
 let botonCambio = document.getElementById("boton-cambio");
 let textobienvenida = document.getElementById("texto-bienvenida");
 let botoncolor = document.getElementById("boton-color");
@@ -29,15 +29,17 @@ botonletra.addEventListener("click", () => {
 });
 
 formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
+
 
     if (nombre.value.trim() === "") {
+        e.preventDefault();
         mensaje.textContent = "Por favor escribe tu nombre";
         mensaje.style.color = "red";
         return;
     }
 
     if (correo.value.trim() === "") {
+        e.preventDefault();
         mensaje.textContent = "Por favor escribe tu correo";
         mensaje.style.color = "red";
         return;
@@ -46,4 +48,4 @@ formulario.addEventListener("submit", (e) => {
     mensaje.textContent = "Tus datos han sido enviados";
     mensaje.style.color = "green";
 });
-*/
+

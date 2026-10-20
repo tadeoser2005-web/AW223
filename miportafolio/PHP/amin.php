@@ -42,8 +42,8 @@
                     <td>".$arrMensaje['mensaje']."</td>
                     <td>".$arrMensaje['timeStaps']."</td>
                     <td class='opciones'>
-                        <a href='../PHP/editar.php' title='Editar'>✏️</a>
-                        <a href='../PHP/borrar.php' title='Borrar'>🗑️</a>
+                        <a href='../PHP/editar.php?id=".$arrMensaje['id']."' title='Editar'>✏️</a>
+                        <a href='../PHP/borrar.php?id=".$arrMensaje['id']."' title='Borrar' onclick='return confirm(\"Estás seguro de que quieres borrar este mensaje?\")'>🗑️</a>
                     </td>
                 </tr>";
                    }
@@ -51,9 +51,18 @@
             </tbody>
         </table>
 </div>
+
     <footer>
         <p>2026 Mi portafolio web </p>
         <p>Practica de programacion web, todos los derechos reservados</p>
     </footer>
+
+    <?php
+    if (isset($_GET['estadophp']) && $_GET['estadophp'] === 'exito'): ?>
+        <script>
+            alert('Registro actualizado con éxito');
+        </script>
+    <?php endif; ?>
+
 </body>
 </html>

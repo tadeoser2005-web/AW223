@@ -1,3 +1,11 @@
+<?php
+require_once  "../conexion.php";
+$id = $_GET['id'];
+$query = "SELECT nombre, correo, mensaje FROM mensaje WHERE id = $id";
+$resultado = mysqli_query($conexion, $query);
+$arrMensaje = mysqli_fetch_assoc($resultado);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,8 +25,8 @@
 
 
 <div style="text-align: center; margin: 20px 0; font-size: 24px;">
-    <a href="/AW223/miportafolio/index.html" title="Ir al Portafolio" style="text-decoration: none; margin: 0 15px;">🏠</a>
-    <a href="../admin.php" title="Regresar a Admin" style="text-decoration: none; margin: 0 15px;">🔄</a>
+    <a href="/AW223/miportafolio/index.php" title="Ir al Portafolio" style="text-decoration: none; margin: 0 15px;">🏠</a>
+    <a href="../amin.php" title="Regresar a Admin" style="text-decoration: none; margin: 0 15px;">🔄</a>
 </div>
 
 
@@ -29,14 +37,14 @@
 
 
 
-        <form id="formulario">
+        <form id="formulario" action="mostrarRegistro.php" method="post">
 
             <div class="campo">
-<?php
-require_once __DIR__ . '/../../mostrarRegistro.php';
-$rsMensajes = recuperarForm();
-while ($arrMensaje=mysqli_fetch_array($rsMensajes)){
-    echo "<tr>"
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+            </div>
+
+            <div class="campo">
+
                 <label for="nombre">
                     Nombre
                 </label>
@@ -44,12 +52,12 @@ while ($arrMensaje=mysqli_fetch_array($rsMensajes)){
                     type="text"
                     id="nombre"
                     name="nombre"
-                    placeholder='".$arrMensaje["nombre"]."'
+                    value="<?php echo $arrMensaje['nombre']; ?>"
+                    required
                 >
 
             </div>
-        </tr>"
-}
+
             <div class="campo">
                 <label for="correo">
                     correo electronico
@@ -57,8 +65,9 @@ while ($arrMensaje=mysqli_fetch_array($rsMensajes)){
                 <input
                     type="text"
                     id="correo"
-                    name="email"
-                    placeholder="ejemplo@gmail.com"
+                    name="correo"
+                    value="<?php echo $arrMensaje['correo']; ?>"
+                    required
                 >
 
 
@@ -73,13 +82,14 @@ while ($arrMensaje=mysqli_fetch_array($rsMensajes)){
                     id="texto-mensaje"
                     name="mensaje"
                     rows="5"
-                    placeholder="escribe tu mensaje">
-</textarea>
+                    required
+                ><?php echo $arrMensaje['mensaje']; ?>
+                </textarea>
 
             </div>
 
             <button type="submit">
-                Enviar mensaje
+                Actualizar mensaje
             </button>
             <p id="mensaje"></p>
     
