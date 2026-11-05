@@ -26,7 +26,7 @@ $arrMensaje = mysqli_fetch_assoc($resultado);
 
 <div style="text-align: center; margin: 20px 0; font-size: 24px;">
     <a href="/AW223/miportafolio/index.php" title="Ir al Portafolio" style="text-decoration: none; margin: 0 15px;">🏠</a>
-    <a href="../amin.php" title="Regresar a Admin" style="text-decoration: none; margin: 0 15px;">🔄</a>
+    <a href="amin.php" title="Regresar a Admin" style="text-decoration: none; margin: 0 15px;">🔄</a>
 </div>
 
 

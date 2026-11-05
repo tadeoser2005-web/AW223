@@ -132,6 +132,7 @@ type="text"
 id="nombre"
 name="txtnombre"
 placeholder="Escribe tu nombre"
+required
 >
 
 </div>
@@ -147,12 +148,8 @@ name="txtemail"
 placeholder="ejemplo@gmail.com"
 required
 >
-
-
 </div>
-
 <div class="campo">
-
     <label for="texto-mensaje">
         Mensaje
     </label>
@@ -160,32 +157,21 @@ required
     id="texto-mensaje"
     name="txtmensaje"
     rows="5"
+    required
     placeholder="escribe tu mensaje">
 </textarea>
-    
 </div>
-
 <button type="submit">
     Enviar mensaje 
 </button>
 <p id="mensaje"></p>
-
     </form> <!-- formulario -->
-
-    
 </section>
-
-
 </main>
-
-
 <footer>
 <p>2026 Mi portafolio web </p>
 <p>Practica de programacion web, todos los derechos reservados</p>
 </footer>
     <script src="../SCRIPT/AlertInsert.js" defer></script>
 </body>
-
-
-
 </html>
