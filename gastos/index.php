@@ -53,6 +53,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </thead>
         <tbody>
 
+        <tbody>
+        <!-- Filas de datos de equipos -->
+        <?php //aqui incrustaremos el codigo php
+
+        //resultado es la variable q guarda la consulta
+        //en el select traemos todos los datos de los equipos
+
+        $resultado = mysqli_query($conexion, "SELECT * FROM gastos");
+
+        //mysqli_fetch_assoc es la funcion q trae los valores
+        //le decimos q traiga los valores con la consulta q esta en resultado, y eso lo guarde en la variable row
+
+        while ($row = mysqli_fetch_assoc($resultado)) {
+
+            //creo q lo de dentro del row hace referencia a el campo en la bd
+
+            echo "<tr>";
+
+            echo "<td>" . $row['concepto'] . "</td>";
+            echo "<td>" . $row['categoria'] . "</td>";
+            echo "<td>" . $row['monto'] . "</td>";
+            echo "<td>" . $row['fecha'] . "</td>";
+            echo "<td>" . $row['pagado'] . "</td>";echo "<td class='opciones'>";
+            echo "<a href='' title='Editar'>Marcar pagado</a> ";
+            echo "</td>";
+        }
+        ?>
 
         </tbody>
     </table>
