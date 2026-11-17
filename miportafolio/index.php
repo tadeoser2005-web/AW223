@@ -20,7 +20,7 @@
     <header>
 
 <h1> Mi Portafolio </h1>   <!-- este es un titulo -->
-<p id="texto-bienvenida"> Bienvenido a mi sitio web </p>  <!-- este es un parrafo -->
+<p id="texto-bienvenida"> bbbb a mi sitio webo </p>  <!-- este es un parrafo -->
 <button id="boton-cambio"> Presioname </button>
     </header>  <!-- shift + alt + a es para comentsrio -->
 
