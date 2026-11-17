@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Control de gastos personales</title>
 </head>
 <body>
-<h1>Control de gastos personales</h1>
+<h1>Control de gastos personale</h1>
 
 <main>
 <form class="formulario" action="index.php" method="post">
